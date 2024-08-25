@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <title>Document</title>
 </head>
 
@@ -23,7 +25,7 @@
                     </ul>
                 </div>
                 <div class="authArea">
-                    <button>
+                    <button id="openModal">
                         <img src="./Assets/Images/loginIcon.svg" alt="">
                         <span>Lærerinnlogging</span>
                     </button>
@@ -34,97 +36,114 @@
 
     <section>
         <div class="container">
-            <div class="servicesMain">
-                <div class="cardMain leftSide">
-                    <div class="serviceCard large">
-                        <div class="cardImage">
-                            <img src="./Assets/Images/service-1.png" alt="">
+            <div class="servicesMain row">
+                <div class="leftSide">
+                    <div class="topSection">
+                        <div class="serviceCard large">
+
+                            <div class="cardImage">
+                                <img src="./Assets/Images/img1.png" alt="">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="infoText">
+                                    <span>3 videoer</span>
+                                    <span>Undervisningsoppgaver</span>
+                                </div>
+                                <div class="headingWrapper">
+                                    <h1 class="heading font-xxl">Bipolar Lidelse</h1>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="cardInfo">
-                            <div class="infoText">
-                                <span>3 videoer</span>
-                                <span>Undervisningsoppgaver</span>
+                        <div class="serviceCard">
+
+                            <div class="cardImage">
+                                <img src="./Assets/Images/img2.png" alt="">
                             </div>
-                            <div class="headingWrapper">
-                                <h1 class="heading">Bipolar Lidelse</h1>
+                            <div class="cardInfo">
+                                <div class="infoText">
+                                    <span>3 videoer</span>
+                                    <span>Undervisningsoppgaver</span>
+                                </div>
+                                <div class="headingWrapper">
+                                    <h1 class="heading font-md">Spise-forstyrrelser</h1>
+                                </div>
                             </div>
+
                         </div>
-                    </div>
-                    <div class="serviceCard">
-                        <div class="cardImage">
-                            <img src="./Assets/Images/service-1.png" alt="">
-                        </div>
-                        <div class="cardInfo">
-                            <div class="infoText">
-                                <span>3 videoer</span>
-                                <span>Undervisningsoppgaver</span>
+                        <div class="serviceCard">
+
+                            <div class="cardImage">
+                                <img src="./Assets/Images/img3.png" alt="">
                             </div>
-                            <div class="headingWrapper">
-                                <h1 class="heading">Spise-forstyrrelser</h1>
+                            <div class="cardInfo">
+                                <div class="infoText">
+                                    <span>3 videoer</span>
+                                    <span>Undervisningsoppgaver</span>
+                                </div>
+                                <div class="headingWrapper">
+                                    <h1 class="heading font-md">Posttraumatisk stresslidelse</h1>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="serviceCard">
-                        <div class="cardImage">
-                            <img src="./Assets/Images/service-1.png" alt="">
-                        </div>
-                        <div class="cardInfo">
-                            <div class="infoText">
-                                <span>3 videoer</span>
-                                <span>Undervisningsoppgaver</span>
-                            </div>
-                            <div class="headingWrapper">
-                                <h1 class="heading">Angst</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="serviceCard">
-                        <div class="cardImage">
-                            <img src="./Assets/Images/service-1.png" alt="">
-                        </div>
-                        <div class="cardInfo">
-                            <div class="infoText">
-                                <span>3 videoer</span>
-                                <span>Undervisningsoppgaver</span>
-                            </div>
-                            <div class="headingWrapper">
-                                <h1 class="heading">Posttraumatisk stresslidelse</h1>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="serviceCard">
-                        <div class="cardImage">
-                            <img src="./Assets/Images/service-1.png" alt="">
+                    <div class="bottomSection">
+                        <div class="serviceCard">
+
+                            <div class="cardImage">
+                                <img src="./Assets/Images/img4.png" alt="">
+                            </div>
+                            <div class="cardInfo">
+                                <div class="infoText">
+                                    <span>3 videoer</span>
+                                    <span>Undervisningsoppgaver</span>
+                                </div>
+                                <div class="headingWrapper">
+                                    <h1 class="heading font-md">Personlighets-forstyrrelser</h1>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="cardInfo">
-                            <div class="infoText">
-                                <span>3 videoer</span>
-                                <span>Undervisningsoppgaver</span>
+                        <div class="serviceCard">
+
+                            <div class="cardImage">
+                                <img src="./Assets/Images/img5.png" alt="">
                             </div>
-                            <div class="headingWrapper">
-                                <h1 class="heading">Personlighets-forstyrrelser</h1>
+                            <div class="cardInfo">
+                                <div class="infoText">
+                                    <span>3 videoer</span>
+                                    <span>Undervisningsoppgaver</span>
+                                </div>
+                                <div class="headingWrapper">
+                                    <h1 class="heading font-xl">ADHD</h1>
+                                </div>
                             </div>
+
                         </div>
-                    </div>
-                    <div class="serviceCard">
-                        <div class="cardImage">
-                            <img src="./Assets/Images/service-1.png" alt="">
-                        </div>
-                        <div class="cardInfo">
-                            <div class="infoText">
-                                <span>3 videoer</span>
-                                <span>Undervisningsoppgaver</span>
+                        <div class="serviceCard">
+
+                            <div class="cardImage">
+                                <img src="./Assets/Images/img6.png" alt="">
                             </div>
-                            <div class="headingWrapper">
-                                <h1 class="heading">ADHD</h1>
+                            <div class="cardInfo">
+                                <div class="infoText">
+                                    <span>3 videoer</span>
+                                    <span>Undervisningsoppgaver</span>
+                                </div>
+                                <div class="headingWrapper">
+                                    <h1 class="heading font-lg">Psykose</h1>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="cardMain rightSide">
+                <div class="rightSide">
                     <div class="serviceCard">
+
                         <div class="cardImage">
-                            <img src="./Assets/Images/service-5.png" alt="">
+                            <img src="./Assets/Images/img7.png" alt="">
                         </div>
                         <div class="cardInfo">
                             <div class="infoText">
@@ -132,13 +151,15 @@
                                 <span>Undervisningsoppgaver</span>
                             </div>
                             <div class="headingWrapper">
-                                <h1 class="heading">Psykose</h1>
+                                <h1 class="heading font-xl">Angst</h1>
                             </div>
                         </div>
+
                     </div>
                     <div class="serviceCard">
+
                         <div class="cardImage">
-                            <img src="./Assets/Images/service-5.png" alt="">
+                            <img src="./Assets/Images/img8.png" alt="">
                         </div>
                         <div class="cardInfo">
                             <div class="infoText">
@@ -146,9 +167,10 @@
                                 <span>Undervisningsoppgaver</span>
                             </div>
                             <div class="headingWrapper">
-                                <h1 class="heading">Kjønns-identitet</h1>
+                                <h1 class="heading font-lg">Kjønns-identitet</h1>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -176,7 +198,46 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="loginForm" action="">
+                <span class="title">E-post for Feideinnlogging</span>
+                <div class="input">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button type="submit">LOGG INN VIA FEIDE <span><img src="./Assets/Images/buttonLogoLight.svg"
+                                alt=""></span></button>
+                </div>
+                <a class="byPassword" href="">Glemt passord?</a>
+            </form>
+        </div>
+    </div>
 </body>
-<script></script>
+<script>
+
+    const modal = document.getElementById('myModal');
+    const openModal = document.getElementById('openModal');
+    const closeBtn = document.getElementsByClassName('close')[0];
+
+    // Open modal
+    openModal.onclick = function () {
+        modal.style.display = 'flex'; // Use 'flex' to show the modal
+    }
+
+    // Close modal
+    closeBtn.onclick = function () {
+        modal.style.display = 'none'; // Hide the modal
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none'; // Hide the modal
+        }
+    }
+
+
+</script>
+
 
 </html>

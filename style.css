@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --font-family-inter: 'Inter', sans-serif;
+    --anybody: "Anybody", sans-serif;
     --primary-color: #639;
     --bgColor: #FFF0E6;
     --dark: #363837;
@@ -32,15 +34,19 @@ ul {
     list-style: none;
 }
 
+
+
 body {
-    background-color: #FFF0E6;
+    background-color: #FFF0E6 !important;
     font-family: var(--font-family-inter);
 }
 
+
 .container {
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 0 10px;
 }
 
 header {
@@ -101,42 +107,50 @@ section {
     padding: 30px 0;
 }
 
-
-section .servicesMain {
+.servicesMain {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: calc(75% - 10px) calc(25% - 10px);
     gap: 20px;
-    width: 100%;
-    box-sizing: border-box;
+
 }
 
-
-
-section .servicesMain .cardMain.leftSide {
+.servicesMain .leftSide {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
-section .servicesMain .cardMain.rightSide {
+.servicesMain .leftSide .topSection {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.33% - 13px));
+    gap: 20px;
+}
+
+.servicesMain .leftSide .topSection .large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.servicesMain .leftSide .bottomSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.servicesMain .rightSide {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-section .servicesMain .serviceCard .cardInfo .infoText {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.rightSide .serviceCard {
+    height: 100%;
 }
 
-section .servicesMain .serviceCard .cardInfo .infoText {
-    padding: 12px 0;
-}
-
-section .servicesMain .serviceCard .cardInfo .infoText span {
+.rightSide .serviceCard .cardInfo .infoText {
     color: var(--gray);
     text-align: right;
+    font-family: Anybody;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -144,52 +158,91 @@ section .servicesMain .serviceCard .cardInfo .infoText span {
     text-transform: uppercase;
 }
 
-section .servicesMain .cardMain.rightSide .serviceCard {
-    height: 50%;
-}
-
-section .cardMain.leftSide .serviceCard.large {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-section .cardMain.leftSide .serviceCard .cardInfo .heading {
-    font-size: 24px;
-}
-
-section .cardMain .serviceCard .cardInfo .headingWrapper {
+.serviceCard {
     display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px;
+}
+
+.cardMain {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+}
+
+.cardImage {
+    flex-shrink: 0;
+}
+
+.cardImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cardInfo {
+    padding: 15px;
+}
+
+.serviceCard .cardInfo .infoText {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
-section .cardMain .serviceCard .cardInfo .heading {
-    color: #639;
-    text-align: center;
+.serviceCard .cardInfo .infoText span {
+    color: #999;
+    text-align: right;
+    font-family: var(--anybody);
+    font-size: 12px;
     font-style: normal;
-    font-weight: 900;
-    padding: 20px 0;
+    font-weight: 700;
+    line-height: normal;
     text-transform: uppercase;
 }
 
 
-section .cardMain.leftSide .serviceCard.large .cardInfo .heading {
-    line-height: 80px;
+.serviceCard .cardInfo .heading.font-xxl {
     font-size: 80px;
 }
 
-section .servicesMain .serviceCard {
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 20px;
+.serviceCard .cardInfo .heading.font-xl {
+    font-size: 60px;
 }
 
-section .servicesMain .serviceCard .cardImage img {
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    display: block;
+.serviceCard .cardInfo .heading.font-lg {
+    font-size: 40px;
+}
+
+.serviceCard .cardInfo .heading.font-md {
+    font-size: 24px;
+}
+
+
+.serviceCard .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.serviceCard .cardInfo .heading {
+    font-family: var(--anybody);
+    padding: 20px 0;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 footer {
@@ -211,4 +264,108 @@ footer .footerMain .copyRight {
     gap: 5px;
     align-items: center;
     color: #fff;
+}
+
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: var(--bgColor);
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.modal-content .loginForm {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.modal-content .loginForm .input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Close Button */
+.modal-content .loginForm .input input,
+.modal-content .loginForm .input button {
+    padding: 16px 35px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    color: var(--dark);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+.modal-content .loginForm .input button span {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.modal-content .loginForm .title {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.modal-content .loginForm .byPassword {
+    text-decoration: underline;
+}
+
+.modal-content .loginForm .input button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--dark);
+    color: var(--bgColor);
+    justify-content: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
 }
