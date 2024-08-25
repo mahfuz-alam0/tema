@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-family-inter: 'Inter', sans-serif;
+    --primary-color: #639;
+    --bgColor: #FFF0E6;
+    --dark: #363837;
+    --gray: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #FFF0E6;
+    font-family: var(--font-family-inter);
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header {
+    background: #fff;
+}
+
+header .mainHeader {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 25px 0;
+}
+
+header .mainHeader .logoArea {
+    aspect-ratio: 126 / 54;
+}
+
+header .mainHeader .authArea {
+    margin-left: auto;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 16px;
+}
+
+.navigation ul li a {
+    color: #363837;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.navigation ul li a.active {
+    color: #999;
+    border-bottom: 2px solid #CC6666;
+}
+
+header .mainHeader .authArea button {
+    color: #639;
+    font-family: inherit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 13px 25px;
+    border: 1px solid #639;
+    background-color: transparent;
+    border-radius: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+section {
+    padding: 30px 0;
+}
+
+
+section .servicesMain {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+section .servicesMain .cardMain.leftSide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+section .servicesMain .cardMain.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section .servicesMain .serviceCard .cardInfo .infoText {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+section .servicesMain .serviceCard .cardInfo .infoText {
+    padding: 12px 0;
+}
+
+section .servicesMain .serviceCard .cardInfo .infoText span {
+    color: var(--gray);
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+section .servicesMain .cardMain.rightSide .serviceCard {
+    height: 50%;
+}
+
+section .cardMain.leftSide .serviceCard.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+section .cardMain.leftSide .serviceCard .cardInfo .heading {
+    font-size: 24px;
+}
+
+section .cardMain .serviceCard .cardInfo .headingWrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+section .cardMain .serviceCard .cardInfo .heading {
+    color: #639;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+
+section .cardMain.leftSide .serviceCard.large .cardInfo .heading {
+    line-height: 80px;
+    font-size: 80px;
+}
+
+section .servicesMain .serviceCard {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+section .servicesMain .serviceCard .cardImage img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    padding: 100px 0;
+    background: var(--dark);
+    color: #FFF0E6;
+}
+
+footer .footerMain {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+footer .footerMain .copyRight {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: #fff;
+}
