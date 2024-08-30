@@ -370,3 +370,167 @@ footer .footerMain .copyRight {
     color: black;
     text-decoration: none;
 }
+
+
+.serviceDetailsMain .smallTitle {
+    color: var(--gray);
+    font-family: Anybody;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.serviceDetailsMain .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.serviceDetailsMain .main-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family: var(--anybody);
+    width: 100%;
+}
+
+.serviceDetailsMain .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.serviceDetailsMain .text-content {
+    flex: 1 1 40%;
+}
+
+.serviceDetailsMain .descriptionTitle {
+    color: var(--primary-color);
+    font-family: var(--anybody);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.serviceDetailsMain .description {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* text-decoration-line: underline; */
+}
+
+.serviceDetailsMain .danger-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.serviceDetailsMain .danger-list li {
+    margin-bottom: 10px;
+}
+
+.serviceDetailsMain .image-content {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceDetailsMain .main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.serviceDetailsMain .reletedTitle {
+    color: var(--primary-color);
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.serviceDetailsMain .film-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.serviceDetailsMain .film-item {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(25% - 40px); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Increased gap for better spacing */
+    align-items: center;
+}
+
+.serviceDetailsMain .film-item .img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.serviceDetailsMain .film-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image covers the available space */
+}
+
+.serviceDetailsMain .film-item .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.serviceDetailsMain .film-item span {
+    color: var(--gray);
+    font-family: var(--anybody);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.serviceDetailsMain .film-item h3 {
+    color: var(--primary-color);
+    font-family: var(--anybody);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.serviceDetailsMain .film-item p {
+    color: var(--gray);
+    font-family: var(--font-family-inter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
