@@ -477,11 +477,12 @@ footer .footerMain .copyRight {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    flex: 1 1 calc(25% - 40px); 
+    flex: 1 1 calc(25% - 40px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Increased gap for better spacing */
+    gap: 16px;
+    /* Increased gap for better spacing */
     align-items: center;
 }
 
@@ -495,7 +496,8 @@ footer .footerMain .copyRight {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Ensures the image covers the available space */
+    object-fit: cover;
+    /* Ensures the image covers the available space */
 }
 
 .serviceDetailsMain .film-item .info {
@@ -533,4 +535,157 @@ footer .footerMain .copyRight {
     margin: 0;
 }
 
+.servicePageMain .back-link {
+    color: #000;
+    font-family: Anybody;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: block;
+}
 
+.servicePageMain .main-video {
+    width: 100%;
+    position: relative;
+}
+
+.servicePageMain .main-video video {
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.servicePageMain .main-video .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.servicePageMain .main-video .fullscreen-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.servicePageMain .related-section .heading {
+    color: var(--primary-color);
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+
+.servicePageMain .serviceMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(150px, auto));
+    /* grid-template-rows: auto; */
+    gap: 20px;
+}
+
+.servicePageMain .serviceMain .related-item {
+    grid-column: span 1;
+}
+
+.servicePageMain .serviceMain .related-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.servicePageMain .serviceMain .related-item .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.servicePageMain .serviceMain .related-item .info .related-category {
+    color: var(--gray);
+    text-align: center;
+    font-family: Anybody;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.servicePageMain .serviceMain .related-item .info h3 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Anybody;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.servicePageMain .serviceMain .related-item .info .related-description {
+    color: var(--gray);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.servicePageMain .serviceMain .related-count {
+    grid-column: 3 / 5;
+    grid-row: 1 / -1;
+    background-color: #CC6666;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicePageMain .serviceMain .related-count .smallTitle {
+    color: #fff;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.servicePageMain .serviceMain .related-count .serviceDiscription {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.servicePageMain .serviceMain .related-count .serviceNumber {
+    color: #FFF0E6;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.servicePageMain .serviceMain .imgage img {
+    width: 100%;
+    height: auto;
+}

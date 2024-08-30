@@ -31,48 +31,80 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="servicePageMain">
         <div class="container">
             <!-- Back Link -->
-            <a href="#" class="back-link">TILBAKE</a>
+            <a href="#" class="back-link">&lt; TILBAKE</a>
 
             <!-- Main Video Section -->
             <div class="main-video">
-                <img src="main-video.jpg" alt="Main Video">
-                <div class="play-button"></div>
-                <div class="fullscreen-button"></div>
+                <video id="myVideo" src="./Assets/Video/852421-hd_1920_1080_30fps.mp4" alt="Main Video"></video>
+                <div class="play-button" id="playButton">
+                    <img src="./Assets/Images/playtn.svg" alt="">
+                </div>
+                <div class="fullscreen-button" id="fullscreenButton">
+                    <img src="./Assets/Images/fullScreen.svg" alt="">
+                </div>
             </div>
 
             <!-- Related Section -->
             <div class="related-section">
-                <h2>Se også</h2>
-                <div class="related-items">
+                <h2 class="heading">Se også</h2>
+                <div class="serviceMain">
                     <div class="related-item">
-                        <img src="related1.jpg" alt="Related 1">
-                        <div class="related-overlay"></div>
-                        <p class="related-category">ANOREKSI</p>
-                        <h3>FILMTITTEL 2</h3>
-                        <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        <div class="imgage">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
                     </div>
                     <div class="related-item">
-                        <img src="related2.jpg" alt="Related 2">
-                        <div class="related-overlay"></div>
-                        <p class="related-category">ANOREKSI</p>
-                        <h3>FILMTITTEL 3</h3>
-                        <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        <div class="imgage">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
                     </div>
-                </div>
+                    <div class="related-item">
+                        <div class="imgage">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div class="imgage">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
 
-                <!-- Contact Section -->
-                <div class="contact-section">
-                    <h2>Trenger du noen å snakke med?</h2>
-                    <p class="contact-number">116 123</p>
-                    <p class="contact-description">En gratis og døgnåpen telefontjeneste for alle som trenger noen å
-                        snakke med.</p>
+                    <!-- Contact Section -->
+                    <div class="related-item related-count">
+                        <div class="contact-section">
+                            <h5 class="smallTitle">Trenger du noen å snakke med?</h5>
+                            <h1 class="serviceNumber">116 123</h1>
+                            <p class="serviceDiscription">En gratis og døgnåpen telefontjeneste for alle som trenger
+                                noen å snakke med.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="footerMain">
@@ -95,5 +127,56 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const video = document.getElementById('myVideo');
+    const playButton = document.getElementById('playButton');
+    const fullscreenButton = document.getElementById('fullscreenButton');
+
+    // Function to toggle play/pause
+    function togglePlayPause() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    // Add click event listener to the play button
+    playButton.addEventListener('click', togglePlayPause);
+
+    // Add click event listener to the video itself
+    video.addEventListener('click', togglePlayPause);
+
+    // Hide the play button when the video is playing
+    video.addEventListener('play', function () {
+        playButton.style.display = 'none';
+    });
+
+    // Show the play button when the video is paused
+    video.addEventListener('pause', function () {
+        playButton.style.display = 'block';
+    });
+
+    // Optionally, show the play button again when the video ends
+    video.addEventListener('ended', function () {
+        playButton.style.display = 'block';
+    });
+
+    // Fullscreen functionality
+    fullscreenButton.addEventListener('click', function () {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { // Firefox
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { // IE/Edge
+            video.msRequestFullscreen();
+        }
+    });
+
+
+</script>
 
 </html>
