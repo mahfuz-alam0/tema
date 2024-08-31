@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./responsive.css">
     <title>Document</title>
 </head>
 
@@ -38,7 +40,9 @@
 
             <!-- Main Video Section -->
             <div class="main-video">
-                <video id="myVideo" src="./Assets/Video/852421-hd_1920_1080_30fps.mp4" alt="Main Video"></video>
+                <div class="video">
+                    <video id="myVideo" src="./Assets/Video/852421-hd_1920_1080_30fps.mp4" alt="Main Video"></video>
+                </div>
                 <div class="play-button" id="playButton">
                     <img src="./Assets/Images/playtn.svg" alt="">
                 </div>
@@ -50,9 +54,73 @@
             <!-- Related Section -->
             <div class="related-section">
                 <h2 class="heading">Se også</h2>
+
+                <div class="serviceMainMobial">
+                    <div class="related-item">
+                        <div class="imageReleted">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div class="imageReleted">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div class="imageReleted">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div class="imageReleted">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div class="imageReleted">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="related-item">
+                        <div class="imageReleted">
+                            <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
+                        </div>
+                        <div class="info">
+                            <p class="related-category">ANOREKSI</p>
+                            <h3>FILMTITTEL 2</h3>
+                            <p class="related-description">En underteskt til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="serviceMain">
                     <div class="related-item">
-                        <div class="imgage">
+                        <div class="imageReleted">
                             <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
                         </div>
                         <div class="info">
@@ -62,7 +130,7 @@
                         </div>
                     </div>
                     <div class="related-item">
-                        <div class="imgage">
+                        <div class="imageReleted">
                             <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
                         </div>
                         <div class="info">
@@ -72,7 +140,7 @@
                         </div>
                     </div>
                     <div class="related-item">
-                        <div class="imgage">
+                        <div class="imageReleted">
                             <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
                         </div>
                         <div class="info">
@@ -82,7 +150,7 @@
                         </div>
                     </div>
                     <div class="related-item">
-                        <div class="imgage">
+                        <div class="imageReleted">
                             <img src="./Assets/ServiceDetails/service.png" alt="Related 1">
                         </div>
                         <div class="info">
@@ -127,13 +195,12 @@
         </div>
     </footer>
 </body>
-
+<script src="./script/slider.js"></script>
 <script>
     const video = document.getElementById('myVideo');
     const playButton = document.getElementById('playButton');
     const fullscreenButton = document.getElementById('fullscreenButton');
 
-    // Function to toggle play/pause
     function togglePlayPause() {
         if (video.paused) {
             video.play();
@@ -142,36 +209,30 @@
         }
     }
 
-    // Add click event listener to the play button
     playButton.addEventListener('click', togglePlayPause);
 
-    // Add click event listener to the video itself
     video.addEventListener('click', togglePlayPause);
 
-    // Hide the play button when the video is playing
     video.addEventListener('play', function () {
         playButton.style.display = 'none';
     });
 
-    // Show the play button when the video is paused
     video.addEventListener('pause', function () {
         playButton.style.display = 'block';
     });
 
-    // Optionally, show the play button again when the video ends
     video.addEventListener('ended', function () {
         playButton.style.display = 'block';
     });
 
-    // Fullscreen functionality
     fullscreenButton.addEventListener('click', function () {
         if (video.requestFullscreen) {
             video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) { // Firefox
+        } else if (video.mozRequestFullScreen) {
             video.mozRequestFullScreen();
-        } else if (video.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+        } else if (video.webkitRequestFullscreen) {
             video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) { // IE/Edge
+        } else if (video.msRequestFullscreen) {
             video.msRequestFullscreen();
         }
     });

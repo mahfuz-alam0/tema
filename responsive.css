@@ -14,32 +14,32 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .navigation {
         display: none;
     }
-    
+
     .servicesMain .leftSide .topSection {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .servicesMain .leftSide .bottomSection {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .servicesMain .leftSide .bottomSection :first-child {
         grid-column: span 2;
         grid-row: span 2;
     }
-    
+
     .serviceCard .cardInfo .heading.font-xxl {
         font-size: 40px;
     }
-    
+
     .serviceCard .cardInfo .heading.font-md {
         font-size: 16px;
     }
-    
+
     .serviceCard .cardInfo .heading.font-xl {
         font-size: 40px;
     }
@@ -47,18 +47,32 @@
     .serviceCard .cardInfo .heading.font-lg {
         font-size: 24px;
     }
-    
+
     footer .footerMain {
         flex-direction: column;
         align-items: start;
     }
-    
+
     footer .footerMain .copyRight {
         margin: 0;
     }
+
+    .servicePageMain .serviceMain {
+        display: block;
+    }
+    
+    .servicePageMain .serviceMain .related-item {
+        display: none;
+    }
+    
+    .servicePageMain .serviceMain .related-count {
+        padding: 25px 0;
+        display: block;
+    }
 }
+
 @media screen and (max-width: 576px) {
-    header .mainHeader .authArea button{
+    header .mainHeader .authArea button {
         font-size: 14px;
     }
 }

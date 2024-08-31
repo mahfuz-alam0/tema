@@ -552,10 +552,13 @@ footer .footerMain .copyRight {
     position: relative;
 }
 
-.servicePageMain .main-video video {
+.servicePageMain .main-video .video {
+    margin-bottom: 40px;
+}
+
+.servicePageMain .main-video .video video {
     border-radius: 12px;
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .servicePageMain .main-video .play-button {
@@ -592,17 +595,19 @@ footer .footerMain .copyRight {
     gap: 20px;
 }
 
-.servicePageMain .serviceMain .related-item {
-    grid-column: span 1;
+.servicePageMain .serviceMainMobial .related-item {
+    width: 270px;
 }
 
+.servicePageMain .serviceMainMobial .related-item,
 .servicePageMain .serviceMain .related-item {
+    grid-column: span 1;
     background-color: #fff;
     padding: 10px;
     border-radius: 12px;
 }
 
-.servicePageMain .serviceMain .related-item .info {
+.servicePageMain .related-item .info {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -610,7 +615,7 @@ footer .footerMain .copyRight {
     text-align: center;
 }
 
-.servicePageMain .serviceMain .related-item .info .related-category {
+.servicePageMain .related-item .info .related-category {
     color: var(--gray);
     text-align: center;
     font-family: Anybody;
@@ -622,7 +627,7 @@ footer .footerMain .copyRight {
     padding-top: 10px;
 }
 
-.servicePageMain .serviceMain .related-item .info h3 {
+.servicePageMain .related-item .info h3 {
     color: var(--primary-color);
     text-align: center;
     font-family: Anybody;
@@ -633,7 +638,7 @@ footer .footerMain .copyRight {
     text-transform: uppercase;
 }
 
-.servicePageMain .serviceMain .related-item .info .related-description {
+.servicePageMain .related-item .info .related-description {
     color: var(--gray);
     text-align: center;
     font-family: Inter;
@@ -685,7 +690,29 @@ footer .footerMain .copyRight {
     line-height: normal;
 }
 
-.servicePageMain .serviceMain .imgage img {
+.servicePageMain .imageReleted img {
     width: 100%;
     height: auto;
+}
+
+.servicePageMain .serviceMainMobial {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.servicePageMain .serviceMainMobial .related-item {
+    width: 270px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+    cursor: grab;
+}
+
+.servicePageMain .serviceMainMobial.grabbing {
+    cursor: grabbing;
 }
