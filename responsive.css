@@ -2,12 +2,16 @@
 
 /* Media Queries */
 @media screen and (min-width: 1200px) {
+
+    .detailsPageMain .main-title,
     .serviceDetailsMain .main-title {
         font-size: 100px;
     }
 }
 
 @media screen and (max-width: 1200px) {
+
+    .detailsPageMain .main-title,
     .serviceDetailsMain .main-title {
         font-size: 7vw;
     }
@@ -126,22 +130,42 @@
         display: flex;
     }
 
+    .detailsPageMain .content,
     .serviceDetailsMain .content {
         display: block;
     }
 
+    .detailsPageMain .image-content,
     .serviceDetailsMain .image-content {
         display: none;
     }
 
+    .detailsPageMain .descriptionTitle,
     .serviceDetailsMain .descriptionTitle {
         margin-bottom: 10px;
         font-size: 22px;
     }
 
+    .detailsPageMain .image-content .CountMain {
+        margin-top: 25px;
+    }
+
+    .detailsPageMain .image-content.mobile,
     .serviceDetailsMain .image-content.mobile {
         display: block;
         margin-bottom: 30px;
+    }
+
+    .detailsPageMain .image-content .CountMain .serviceNumber {
+        font-size: 40px;
+    }
+
+    .detailsPageMain .image-content .CountMain .title {
+        font-size: 18px;
+    }
+
+    .detailsPageMain .image-content .CountMain .serviceDiscription {
+        font-size: 14px;
     }
 
 }

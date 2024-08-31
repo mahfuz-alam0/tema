@@ -416,6 +416,7 @@ footer .footerMain .copyRight {
 }
 
 
+.detailsPageMain .smallTitle,
 .serviceDetailsMain .smallTitle {
     color: var(--gray);
     font-family: Anybody;
@@ -428,6 +429,7 @@ footer .footerMain .copyRight {
     display: block;
 }
 
+.detailsPageMain .main-title,
 .serviceDetailsMain .main-title {
     font-weight: bold;
     color: var(--primary-color);
@@ -436,6 +438,7 @@ footer .footerMain .copyRight {
     width: 100%;
 }
 
+.detailsPageMain .content,
 .serviceDetailsMain .content {
     display: flex;
     flex-wrap: wrap;
@@ -443,10 +446,12 @@ footer .footerMain .copyRight {
     margin-bottom: 40px;
 }
 
+.detailsPageMain .text-content,
 .serviceDetailsMain .text-content {
     flex: 1 1 40%;
 }
 
+.detailsPageMain .descriptionTitle,
 .serviceDetailsMain .descriptionTitle {
     color: var(--primary-color);
     font-family: var(--anybody);
@@ -457,6 +462,7 @@ footer .footerMain .copyRight {
     margin-bottom: 50px;
 }
 
+.detailsPageMain .description,
 .serviceDetailsMain .description {
     color: var(--gray);
     font-family: Inter;
@@ -464,23 +470,79 @@ footer .footerMain .copyRight {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* text-decoration-line: underline; */
 }
 
+.detailsPageMain .danger-list,
 .serviceDetailsMain .danger-list {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
 }
 
+.detailsPageMain .danger-list li,
 .serviceDetailsMain .danger-list li {
     margin-bottom: 10px;
 }
 
+.detailsPageMain .image-content.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detailsPageMain .image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detailsPageMain .image-content .CountMain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #C66;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.detailsPageMain .image-content .CountMain .title {
+    color: #FFF;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.detailsPageMain .image-content .CountMain .serviceNumber {
+    color: #FFF0E6;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.detailsPageMain .image-content .CountMain .serviceDiscription {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.detailsPageMain .image-content.mobile,
 .serviceDetailsMain .image-content.mobile {
     display: none;
 }
 
+.detailsPageMain .image-content,
 .serviceDetailsMain .image-content {
     flex: 1 1 35%;
     display: flex;
@@ -488,12 +550,15 @@ footer .footerMain .copyRight {
     align-items: center;
 }
 
+.detailsPageMain .main-image,
 .serviceDetailsMain .main-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    width: 100%;
 }
 
+.detailsPageMain .reletedTitle,
 .serviceDetailsMain .reletedTitle {
     color: var(--primary-color);
     font-family: Anybody;
@@ -504,6 +569,7 @@ footer .footerMain .copyRight {
     margin-bottom: 50px;
 }
 
+.detailsPageMain .film-list,
 .serviceDetailsMain .film-list {
     display: flex;
     justify-content: space-between;
@@ -512,6 +578,7 @@ footer .footerMain .copyRight {
     flex-wrap: wrap;
 }
 
+.detailsPageMain .film-item,
 .serviceDetailsMain .film-item {
     background-color: #FFF;
     padding: 10px;
@@ -526,12 +593,14 @@ footer .footerMain .copyRight {
     align-items: center;
 }
 
+.detailsPageMain .film-item .img,
 .serviceDetailsMain .film-item .img {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
 }
 
+.detailsPageMain .film-item img,
 .serviceDetailsMain .film-item img {
     max-width: 100%;
     height: auto;
@@ -540,6 +609,7 @@ footer .footerMain .copyRight {
     /* Ensures the image covers the available space */
 }
 
+.detailsPageMain .film-item .info,
 .serviceDetailsMain .film-item .info {
     text-align: center;
     display: flex;
@@ -547,6 +617,7 @@ footer .footerMain .copyRight {
     gap: 8px;
 }
 
+.detailsPageMain .film-item span,
 .serviceDetailsMain .film-item span {
     color: var(--gray);
     font-family: var(--anybody);
@@ -556,6 +627,7 @@ footer .footerMain .copyRight {
     letter-spacing: 1px;
 }
 
+.detailsPageMain .film-item h3,
 .serviceDetailsMain .film-item h3 {
     color: var(--primary-color);
     font-family: var(--anybody);
@@ -566,6 +638,7 @@ footer .footerMain .copyRight {
     margin: 0;
 }
 
+.detailsPageMain .film-item p,
 .serviceDetailsMain .film-item p {
     color: var(--gray);
     font-family: var(--font-family-inter);
