@@ -41,6 +41,50 @@ body {
     font-family: var(--font-family-inter);
 }
 
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+}
+
+.btn.bordered {
+    border: 2px solid #e6b3aa;
+}
+
+.btn.primary {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.btn.outline {
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.btn.white {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn.sm {
+    font-size: 11px;
+    padding: 6px 12px;
+}
+
+.btn.disabled {
+    background: transparent;
+    opacity: .5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
 
 .container {
     max-width: 1200px;
@@ -384,15 +428,7 @@ footer .footerMain .copyRight {
     display: block;
 }
 
-.serviceDetailsMain .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .serviceDetailsMain .main-title {
-    font-size: 100px;
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: 20px;
@@ -439,6 +475,10 @@ footer .footerMain .copyRight {
 
 .serviceDetailsMain .danger-list li {
     margin-bottom: 10px;
+}
+
+.serviceDetailsMain .image-content.mobile {
+    display: none;
 }
 
 .serviceDetailsMain .image-content {
@@ -569,6 +609,10 @@ footer .footerMain .copyRight {
     cursor: pointer;
 }
 
+.servicePageMain .main-video .play-button svg {
+    opacity: .4;
+}
+
 .servicePageMain .main-video .fullscreen-button {
     position: absolute;
     bottom: 20px;
@@ -660,6 +704,14 @@ footer .footerMain .copyRight {
     justify-content: center;
 }
 
+.servicePageMain .serviceMain .related-count .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .servicePageMain .serviceMain .related-count .smallTitle {
     color: #fff;
     text-align: center;
@@ -695,13 +747,17 @@ footer .footerMain .copyRight {
     height: auto;
 }
 
+.servicePageMain .related-section {
+    margin-bottom: 50px;
+}
+
 .servicePageMain .serviceMainMobial {
-    display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     gap: 20px;
     padding: 25px 0;
+    display: none;
 }
 
 .servicePageMain .serviceMainMobial .related-item {
@@ -713,6 +769,207 @@ footer .footerMain .copyRight {
     cursor: grab;
 }
 
-.servicePageMain .serviceMainMobial.grabbing {
+.servicePageMain .serviceMainMobial .grabbing {
     cursor: grabbing;
+}
+
+
+.serviceMain2 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.serviceMain2 .header h2 {
+    color: var(--primary-color);
+
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.serviceMain2 .filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.serviceMain2 .filters .filterButtons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.serviceMain2 .filters span {
+    color: var(--gray);
+    font-family: Anybody;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.serviceMain2 .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 15px));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.serviceMain2 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    flex: 1;
+
+}
+
+.serviceMain2 .card .subCard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.serviceMain2 .card.isPdf {
+
+    justify-content: center;
+}
+
+.serviceMain2 .card.isPdf .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.serviceMain2 .card.isPdf .card-content .file-type {
+    color: var(--gray);
+    text-align: center;
+    font-family: Anybody;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.serviceMain2 .card .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.serviceMain2 .card .card-content .category {
+    color: var(--gray);
+    text-align: center;
+    font-family: Anybody;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.serviceMain2 .card .card-content .title {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Anybody;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    /* 100% */
+    text-transform: uppercase;
+}
+
+.serviceMain2 .card .card-content .description {
+    color: var(--gray);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.serviceMain2 .card .card-tags {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.serviceMain2 .card .card-image {
+    position: relative;
+}
+
+.serviceMain2 .card .card-image .imgItem {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.serviceMain2 .card .card-image .overlay-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.serviceMain2 .feedback-section {
+    background-color: #dc5c5c;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.serviceMain2 .feedback-section h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.serviceMain2 .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.serviceMain2 .buttons button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.serviceMain2 .buttons .btn-yes {
+    color: #6A996C;
+}
+
+.serviceMain2 .buttons .btn-no {
+    color: #E54747;
 }

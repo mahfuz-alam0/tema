@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="mainHeader">
+                <div class="logoArea">
+                    <img src="./Assets/Images/logo.png" alt="">
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a class="active" href="">Forsiden</a></li>
+                        <li><a href="">Om TEMA:LIVET</a></li>
+                        <li><a href="">Kontakt oss</a></li>
+                    </ul>
+                </div>
+                <div class="authArea">
+                    <button id="openModal">
+                        <img src="./Assets/Images/loginIcon.svg" alt="">
+                        <span>Lærerinnlogging</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="serviceDetailsMain">
+        <div class="container">
+            <span class="smallTitle">3 VIDEOS</span>
+            <h1 class="main-title">SPISEFORSTYRRELSER</h1>
+            <div class="content">
+                <div class="text-content">
+                    <p class="descriptionTitle">
+                        Anoreksi er en alvorlig medisinsk tilstand, som kan skade helsen din og sette livet ditt i fare.
+                        Derfor er det viktig at du søker hjelp tidlig.
+                    </p>
+                    <div class="image-content mobile">
+                        <img src="./Assets/ServiceDetails/service.png" alt="Anoreksi" class="main-image">
+                    </div>
+                    <div class="description">
+                        <p>Anoreksi kjennetegnes av en intens frykt for å gå opp i vekt. Mange tror de er overvektige,
+                            selv
+                            når
+                            de er undervektige.</p>
+                        <p>Anoreksi handler også om selvfølelse. Mange med anoreksi føler skam og har dårlig
+                            samvittighet. Å
+                            sulte seg kan gi en følelse av kontroll over vanskelige følelser og stress.</p>
+                        <ul class="danger-list">
+                            <li>Benskjørhet</li>
+                            <li>Hodepine</li>
+                            <li>Synsforstyrrelser</li>
+                        </ul>
+                        <p>Anoreksi over lang tid kan gi alvorlige hjerteproblemer i form av unormalt hjerterytme og
+                            hjertesvikt, i verste fall død.</p>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img src="./Assets/ServiceDetails/service.png" alt="Anoreksi" class="main-image">
+                </div>
+            </div>
+            <h2 class="reletedTitle">Alle filmer</h2>
+            <div class="film-list">
+                <div class="film-item">
+                    <div class="img">
+                        <img src="./Assets/ServiceDetails/service.png" alt="Film 1">
+                    </div>
+                    <div class="info">
+                        <span>Anoreksi</span>
+                        <h3>FILMTITTEL 1</h3>
+                        <p>An undertittel til filmen på en eller to linjer.</p>
+                    </div>
+                </div>
+                <div class="film-item">
+                    <div class="img">
+                        <img src="./Assets/ServiceDetails/service.png" alt="Film 1">
+                    </div>
+                    <div class="info">
+                        <span>Anoreksi</span>
+                        <h3>FILMTITTEL 1</h3>
+                        <p>An undertittel til filmen på en eller to linjer.</p>
+                    </div>
+                </div>
+                <div class="film-item">
+                    <div class="img">
+                        <img src="./Assets/ServiceDetails/service.png" alt="Film 1">
+                    </div>
+                    <div class="info">
+                        <span>Anoreksi</span>
+                        <h3>FILMTITTEL 1</h3>
+                        <p>An undertittel til filmen på en eller to linjer.</p>
+                    </div>
+                </div>
+                <div class="film-item">
+                    <div class="img">
+                        <img src="./Assets/ServiceDetails/service.png" alt="Film 1">
+                    </div>
+                    <div class="info">
+                        <span>Anoreksi</span>
+                        <h3>FILMTITTEL 1</h3>
+                        <p>An undertittel til filmen på en eller to linjer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="serviceMain2">
+        <div class="container">
+            <div class="header">
+                <h2>Undervisningsmateriell</h2>
+                <div class="filters">
+                    <span>filter</span>
+                    <div class="filterButtons">
+                        <button class="btn primary bordered">1.–3. klasse</button>
+                        <button class="btn bordered primary">4.–7. klasse</button>
+                        <button class="btn bordered primary disabled">Ungdomsskolen</button>
+                        <button class="btn bordered primary">VGS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container SliderMain">
+                <div class="card slideItem">
+                    <div class="subCard">
+                        <div class="card-image">
+                            <video class="imgItem" id="myVideo"
+                                src="./Assets/Video/852421-hd_1920_1080_30fps.mp4"></video>
+                            <div class="overlay-icon" id="playButton">
+                                <svg width=34" height="34" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" fill="#fff"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <span class="category">ANOREKSI</span>
+                            <h3 class="title">FILM OM ANOREKSI TIL Å VISE PÅ STORSKJERM</h3>
+                            <p class="description">En undertekst til filmen på en eller to linjer.</p>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="btn primary outline sm">VGS</span>
+                    </div>
+                </div>
+
+                <div class="card isPdf slideItem">
+                    <div class="subCard">
+
+                        <div class="card-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path
+                                    d="M8.48713 16.5926C7.71662 16.5926 6.94612 16.3033 6.29333 15.6995L6.15421 15.5611L2.06624 10.756C0.514526 8.93209 -0.213175 6.6679 0.0543621 4.54208C0.364705 2.20241 1.82011 0.453959 3.77848 0.0765942C3.9497 0.0514365 4.11022 0.0262786 4.28145 0.0136998C5.29809 -0.0491943 6.33613 0.240118 7.36348 0.881638C8.08047 1.3219 8.92589 1.3219 9.64289 0.881638C12.4681 -0.879397 14.9294 0.240119 16.1066 2.11436C17.3694 4.12698 17.5513 7.68678 14.9401 10.7434L11.0448 15.3221C10.3278 16.1523 9.40746 16.58 8.47643 16.58L8.48713 16.5926ZM8.21959 12.9447C8.43362 13.0957 8.70116 13.0579 8.88309 12.8567L12.8105 8.24025C14.1589 6.6679 14.2124 5.09555 13.6774 4.25276C13.1637 3.44772 12.1684 3.35967 11.0662 4.03892C9.46097 5.03265 7.5454 5.03265 5.94018 4.03892C5.41581 3.71187 4.89143 3.54835 4.44197 3.58609C4.37776 3.58609 4.31355 3.58609 4.24934 3.61124C3.59655 3.73703 3.14709 4.2905 3.04008 5.09555C2.91166 6.08927 3.32902 7.23394 4.19584 8.25283L8.19819 12.9573L8.21959 12.9447Z"
+                                    fill="#999999" />
+                            </svg>
+                            <span class="file-type">PDF</span>
+                            <h3 class="title">GRUPPEOPPGAVE TIL BRUK I KLASSEROMMET</h3>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="btn primary outline sm">VGS</span>
+                    </div>
+                </div>
+
+                <div class="card isPdf slideItem">
+                    <div class="subCard">
+
+                        <div class="card-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path
+                                    d="M8.48713 16.5926C7.71662 16.5926 6.94612 16.3033 6.29333 15.6995L6.15421 15.5611L2.06624 10.756C0.514526 8.93209 -0.213175 6.6679 0.0543621 4.54208C0.364705 2.20241 1.82011 0.453959 3.77848 0.0765942C3.9497 0.0514365 4.11022 0.0262786 4.28145 0.0136998C5.29809 -0.0491943 6.33613 0.240118 7.36348 0.881638C8.08047 1.3219 8.92589 1.3219 9.64289 0.881638C12.4681 -0.879397 14.9294 0.240119 16.1066 2.11436C17.3694 4.12698 17.5513 7.68678 14.9401 10.7434L11.0448 15.3221C10.3278 16.1523 9.40746 16.58 8.47643 16.58L8.48713 16.5926ZM8.21959 12.9447C8.43362 13.0957 8.70116 13.0579 8.88309 12.8567L12.8105 8.24025C14.1589 6.6679 14.2124 5.09555 13.6774 4.25276C13.1637 3.44772 12.1684 3.35967 11.0662 4.03892C9.46097 5.03265 7.5454 5.03265 5.94018 4.03892C5.41581 3.71187 4.89143 3.54835 4.44197 3.58609C4.37776 3.58609 4.31355 3.58609 4.24934 3.61124C3.59655 3.73703 3.14709 4.2905 3.04008 5.09555C2.91166 6.08927 3.32902 7.23394 4.19584 8.25283L8.19819 12.9573L8.21959 12.9447Z"
+                                    fill="#999999" />
+                            </svg>
+                            <span class="file-type">PPT</span>
+                            <h3 class="title">PRESENTASJON TIL STORSKJERM</h3>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="btn primary outline sm">VGS</span>
+                        <span class="btn primary outline sm">1.–3. klasse</span>
+                        <span class="btn primary outline sm">4.–7. klasse</span>
+                    </div>
+                </div>
+
+                <div class="card isPdf slideItem">
+                    <div class="subCard">
+                        <div class="card-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path
+                                    d="M8.48713 16.5926C7.71662 16.5926 6.94612 16.3033 6.29333 15.6995L6.15421 15.5611L2.06624 10.756C0.514526 8.93209 -0.213175 6.6679 0.0543621 4.54208C0.364705 2.20241 1.82011 0.453959 3.77848 0.0765942C3.9497 0.0514365 4.11022 0.0262786 4.28145 0.0136998C5.29809 -0.0491943 6.33613 0.240118 7.36348 0.881638C8.08047 1.3219 8.92589 1.3219 9.64289 0.881638C12.4681 -0.879397 14.9294 0.240119 16.1066 2.11436C17.3694 4.12698 17.5513 7.68678 14.9401 10.7434L11.0448 15.3221C10.3278 16.1523 9.40746 16.58 8.47643 16.58L8.48713 16.5926ZM8.21959 12.9447C8.43362 13.0957 8.70116 13.0579 8.88309 12.8567L12.8105 8.24025C14.1589 6.6679 14.2124 5.09555 13.6774 4.25276C13.1637 3.44772 12.1684 3.35967 11.0662 4.03892C9.46097 5.03265 7.5454 5.03265 5.94018 4.03892C5.41581 3.71187 4.89143 3.54835 4.44197 3.58609C4.37776 3.58609 4.31355 3.58609 4.24934 3.61124C3.59655 3.73703 3.14709 4.2905 3.04008 5.09555C2.91166 6.08927 3.32902 7.23394 4.19584 8.25283L8.19819 12.9573L8.21959 12.9447Z"
+                                    fill="#999999" />
+                            </svg>
+                            <span class="file-type">PDF</span>
+                            <h3 class="title">MULTIPLE CHOICE OPPGAVER TIL Å PRINTE UT OG DELE UT</h3>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="btn primary outline sm">1.–3. klasse</span>
+                        <span class="btn primary outline sm">4.–7. klasse</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="feedback-section">
+                <h3>Synes du Tema: Livet er nyttig i undervisningen?</h3>
+                <div class="buttons">
+                    <button class="btn primary btn-yes"><img src="./Assets/Images/like.svg" alt=""> JA</button>
+                    <button class="btn primary btn-maybe">TJA</button>
+                    <button class="btn primary btn-no"> <img src="./Assets/Images/dislike.svg" alt="">NEI</button>
+                    <button class="btn white btn-comment">Legg til en kommentar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footerMain">
+
+                <div class="logoArea">
+                    <img src="./Assets/Images/logoFooter.svg" alt="">
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li>Forsiden</li>
+                        <li>Om TEMA:LIVET</li>
+                        <li>Kontakt oss</li>
+                    </ul>
+                </div>
+                <div class="copyRight">
+                    <img src="./Assets/Images/footerLogo.svg" alt="">
+                    <span>©2024 Fagfilmforlaget</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./script/slider.js"></script>
+<script>
+    const video = document.getElementById('myVideo');
+    const playButton = document.getElementById('playButton');
+    const fullscreenButton = document.getElementById('fullscreenButton');
+
+    function togglePlayPause() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    playButton.addEventListener('click', togglePlayPause);
+
+    video.addEventListener('click', togglePlayPause);
+
+    video.addEventListener('play', function () {
+        playButton.style.display = 'none';
+    });
+
+    video.addEventListener('pause', function () {
+        playButton.style.display = 'block';
+    });
+
+    video.addEventListener('ended', function () {
+        playButton.style.display = 'block';
+    });
+
+    fullscreenButton.addEventListener('click', function () {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+        }
+    });
+
+
+</script>
+
+</html>

@@ -1,3 +1,25 @@
+/* responsive.css */
+
+/* Media Queries */
+@media screen and (min-width: 1200px) {
+    .serviceDetailsMain .main-title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .serviceDetailsMain .main-title {
+        font-size: 7vw;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .servicesMain {
         grid-template-columns: 1fr;
@@ -11,10 +33,28 @@
     .rightSide .serviceCard {
         height: auto;
     }
+
+    .serviceMain2 .card-container {
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding: 25px 0;
+    }
+
+    .serviceMain2 .card-container .card {
+        width: 270px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease-in-out;
+        user-select: none;
+        cursor: grab;
+        flex: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
     .navigation {
         display: none;
     }
@@ -60,19 +100,59 @@
     .servicePageMain .serviceMain {
         display: block;
     }
-    
+
     .servicePageMain .serviceMain .related-item {
         display: none;
     }
-    
+
     .servicePageMain .serviceMain .related-count {
         padding: 25px 0;
         display: block;
     }
+
+    .servicePageMain .serviceMain .related-count .smallTitle {
+        font-size: 18px;
+    }
+
+    .servicePageMain .serviceMain .related-count .serviceNumber {
+        font-size: 40px;
+    }
+
+    .servicePageMain .serviceMain .related-count .serviceDiscription {
+        font-size: 14px;
+    }
+
+    .servicePageMain .serviceMainMobial {
+        display: flex;
+    }
+
+    .serviceDetailsMain .content {
+        display: block;
+    }
+
+    .serviceDetailsMain .image-content {
+        display: none;
+    }
+
+    .serviceDetailsMain .descriptionTitle {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .serviceDetailsMain .image-content.mobile {
+        display: block;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
     header .mainHeader .authArea button {
         font-size: 14px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
     }
 }

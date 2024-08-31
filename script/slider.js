@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    const $slider = $('.serviceMainMobial');
-    const $items = $('.related-item');
+    const $slider = $('.SliderMain');
+    const $items = $('.slideItem');
     const itemWidth = $items.outerWidth(true);
     const totalItems = $items.length;
     let isDragging = false;
@@ -11,7 +11,7 @@ $(document).ready(function() {
         isDragging = true;
         startX = e.pageX - $slider.offset().left;
         scrollLeft = $slider.scrollLeft();
-        $slider.addClass('grabbing'); // Add the grabbing class
+        $items.addClass('grabbing'); // Add the grabbing class
     });
 
     // Function to drag the slider
@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(document).on('mouseup', function() {
         if (isDragging) {
             isDragging = false;
-            $slider.removeClass('grabbing'); // Remove the grabbing class
+            $items.removeClass('grabbing'); // Remove the grabbing class
         }
     });
 
