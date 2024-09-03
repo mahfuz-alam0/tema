@@ -1110,10 +1110,6 @@ footer .footerMain .copyRight {
     cursor: pointer;
 }
 
-.side-canvas-content {
-    padding: 15px;
-}
-
 .side-canvas-content .navigation {
     display: block;
 }
@@ -1124,12 +1120,15 @@ footer .footerMain .copyRight {
     gap: 0;
 }
 
-.side-canvas-content .navigation ul li {
+.side-canvas-content .navigation ul li a{
     padding: 10px;
     transition: all 0.3s ease;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 
-.side-canvas-content .navigation ul li:hover {
+.side-canvas-content .navigation ul li a:hover {
     background-color: #fff;
 }
 
