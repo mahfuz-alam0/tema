@@ -141,6 +141,7 @@ header .mainHeader .authArea {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .navigation ul li a.active {
