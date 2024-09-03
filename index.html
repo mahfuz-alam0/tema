@@ -14,6 +14,18 @@
     <header>
         <div class="container">
             <div class="mainHeader">
+                <div class="bar" id="openCanvas">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 4.5H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3 9.5H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3 14.5H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M3 19.5H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
                 <div class="logoArea">
                     <img src="./Assets/Images/logo.png" alt="">
                 </div>
@@ -36,25 +48,74 @@
 
     <section>
         <div class="container">
-            <div class="servicesMain row">
-                <div class="leftSide">
-                    <div class="topSection">
-                        <div class="serviceCard large">
+            <div class="servicesMain2 row">
+                <div class="middle">
+                    <div class="serviceCard  mLarge">
 
-                            <div class="cardImage">
-                                <img src="./Assets/Images/img1.png" alt="">
-                            </div>
-                            <div class="cardInfo">
-                                <div class="infoText">
-                                    <span>3 videoer</span>
-                                    <span>Undervisningsoppgaver</span>
-                                </div>
-                                <div class="headingWrapper">
-                                    <h1 class="heading font-xxl">Bipolar Lidelse</h1>
-                                </div>
-                            </div>
-
+                        <div class="cardImage">
+                            <img src="./Assets/Images/img4.png" alt="">
                         </div>
+                        <div class="cardInfo">
+                            <div class="infoText">
+                                <span>3 videoer</span>
+                                <span>Undervisningsoppgaver</span>
+                            </div>
+                            <div class="headingWrapper">
+                                <h1 class="heading font-md">Personlighets-forstyrrelser</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="serviceCard">
+
+                        <div class="cardImage">
+                            <img src="./Assets/Images/img5.png" alt="">
+                        </div>
+                        <div class="cardInfo">
+                            <div class="infoText">
+                                <span>3 videoer</span>
+                                <span>Undervisningsoppgaver</span>
+                            </div>
+                            <div class="headingWrapper">
+                                <h1 class="heading font-xl">ADHD</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="serviceCard">
+
+                        <div class="cardImage">
+                            <img src="./Assets/Images/img6.png" alt="">
+                        </div>
+                        <div class="cardInfo">
+                            <div class="infoText">
+                                <span>3 videoer</span>
+                                <span>Undervisningsoppgaver</span>
+                            </div>
+                            <div class="headingWrapper">
+                                <h1 class="heading font-lg">Psykose</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="leftSide">
+                    <div class="serviceCard large">
+                        <div class="cardImage">
+                            <img src="./Assets/Images/img1.png" alt="">
+                        </div>
+                        <div class="cardInfo">
+                            <div class="infoText">
+                                <span>3 videoer</span>
+                                <span>Undervisningsoppgaver</span>
+                            </div>
+                            <div class="headingWrapper">
+                                <h1 class="heading font-xxl">Bipolar Lidelse</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottomArea">
                         <div class="serviceCard">
 
                             <div class="cardImage">
@@ -88,57 +149,12 @@
 
                         </div>
                     </div>
+
                     <div class="bottomSection">
-                        <div class="serviceCard">
 
-                            <div class="cardImage">
-                                <img src="./Assets/Images/img4.png" alt="">
-                            </div>
-                            <div class="cardInfo">
-                                <div class="infoText">
-                                    <span>3 videoer</span>
-                                    <span>Undervisningsoppgaver</span>
-                                </div>
-                                <div class="headingWrapper">
-                                    <h1 class="heading font-md">Personlighets-forstyrrelser</h1>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="serviceCard">
-
-                            <div class="cardImage">
-                                <img src="./Assets/Images/img5.png" alt="">
-                            </div>
-                            <div class="cardInfo">
-                                <div class="infoText">
-                                    <span>3 videoer</span>
-                                    <span>Undervisningsoppgaver</span>
-                                </div>
-                                <div class="headingWrapper">
-                                    <h1 class="heading font-xl">ADHD</h1>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="serviceCard">
-
-                            <div class="cardImage">
-                                <img src="./Assets/Images/img6.png" alt="">
-                            </div>
-                            <div class="cardInfo">
-                                <div class="infoText">
-                                    <span>3 videoer</span>
-                                    <span>Undervisningsoppgaver</span>
-                                </div>
-                                <div class="headingWrapper">
-                                    <h1 class="heading font-lg">Psykose</h1>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
+
                 <div class="rightSide">
                     <div class="serviceCard">
 
@@ -174,6 +190,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -212,6 +229,24 @@
             </form>
         </div>
     </div>
+
+    <div id="sideCanvas" class="side-canvas">
+        <div class="side-canvas-header">
+            <span></span>
+            <button id="closeCanvas" class="close-btn">&times;</button>
+        </div>
+        <div class="side-canvas-content">
+            <div class="navigation">
+                <ul>
+                    <li><a class="active" href="">Forsiden</a></li>
+                    <li><a href="">Om TEMA:LIVET</a></li>
+                    <li><a href="">Kontakt oss</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
 </body>
 <script>
 
@@ -235,6 +270,21 @@
             modal.style.display = 'none'; // Hide the modal
         }
     }
+
+    document.getElementById('openCanvas').addEventListener('click', function () {
+        document.getElementById('sideCanvas').classList.add('active');
+        document.getElementById('overlay').classList.add('active');
+    });
+
+    document.getElementById('closeCanvas').addEventListener('click', function () {
+        document.getElementById('sideCanvas').classList.remove('active');
+        document.getElementById('overlay').classList.remove('active');
+    });
+
+    document.getElementById('overlay').addEventListener('click', function () {
+        document.getElementById('sideCanvas').classList.remove('active');
+        document.getElementById('overlay').classList.remove('active');
+    });
 
 
 </script>

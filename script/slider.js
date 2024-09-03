@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     $slider.on('touchmove', function(e) {
         const x = e.originalEvent.touches[0].pageX - $slider.offset().left;
-        const walk = (x - startX) * 2; // Adjust sensitivity
+        const walk = (x - startX) * 2; 
         newScrollLeft = scrollLeft - walk;
         $slider.scrollLeft(newScrollLeft);
     });

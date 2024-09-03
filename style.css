@@ -93,6 +93,18 @@ body {
     padding: 0 10px;
 }
 
+.navigation .current-menu-item a,
+.navigation .current_page_item a,
+.navigation .current-menu-ancestor a {
+    color: #999;
+    border-bottom: 2px solid #CC6666;
+}
+
+.navigation ul li a:hover {
+    color: #999;
+    border-bottom: 2px solid #CC6666;
+}
+
 header {
     background: #fff;
 }
@@ -102,6 +114,11 @@ header .mainHeader {
     align-items: center;
     gap: 40px;
     padding: 25px 0;
+}
+
+header .mainHeader .bar {
+    display: none;
+    cursor: pointer;
 }
 
 header .mainHeader .logoArea {
@@ -159,38 +176,54 @@ section {
 
 }
 
-.servicesMain .leftSide {
+.servicesMain2 {
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 13px));
+    gap: 20px;
+}
+
+.servicesMain2 .leftSide {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    gap: 20px;
+    align-items: start;
+}
+
+.servicesMain2 .bottomArea {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    gap: 20px;
+}
+
+.servicesMain2 .middle {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    height: calc(100% - 20px);
+}
+
+.servicesMain2 .rightSide {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    height: calc(100% - 20px);
+}
+
+.servicesMain2 .leftSide .large {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .servicesMain .leftSide .topSection {
     display: grid;
     grid-template-columns: repeat(3, calc(33.33% - 13px));
     gap: 20px;
-}
-
-.servicesMain .leftSide .topSection .large {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.servicesMain .leftSide .bottomSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
-.servicesMain .rightSide {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.rightSide .serviceCard {
-    height: 100%;
-}
 
 .rightSide .serviceCard .cardInfo .infoText {
     color: var(--gray);
@@ -206,7 +239,6 @@ section {
 .serviceCard {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
     border-radius: 20px;
     overflow: hidden;
     background: #fff;
@@ -1045,4 +1077,80 @@ footer .footerMain .copyRight {
 
 .serviceMain2 .buttons .btn-no {
     color: #E54747;
+}
+
+
+.side-canvas {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    /* Initially hide the canvas on the left */
+    width: 300px;
+    height: 100%;
+    background-color: #FFF0E6;
+    color: #242424;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.side-canvas-header {
+    padding-right: 15px;
+    background-color: #FFF0E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-canvas-content {
+    padding: 15px;
+}
+
+.side-canvas-content .navigation {
+    display: block;
+}
+
+.side-canvas-content .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.side-canvas-content .navigation ul li {
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.side-canvas-content .navigation ul li:hover {
+    background-color: #fff;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.side-canvas.active {
+    left: 0;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
 }
