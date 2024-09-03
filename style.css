@@ -93,6 +93,8 @@ body {
     padding: 0 10px;
 }
 
+
+
 .navigation .current-menu-item a,
 .navigation .current_page_item a,
 .navigation .current-menu-ancestor a {
@@ -170,18 +172,18 @@ section {
     padding: 30px 0;
 }
 
-.servicesMain {
+/* .servicesMain {
     display: grid;
     grid-template-columns: calc(75% - 10px) calc(25% - 10px);
     gap: 20px;
 
-}
+} */
 
-.servicesMain2 {
+/* .servicesMain2 { */
     /* display: grid;
     grid-template-columns: repeat(4, calc(25% - 13px));
     gap: 20px; */
-}
+/* } */
 
 /* .servicesMain2 .leftSide {
     grid-column: span 2;
