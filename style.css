@@ -177,39 +177,39 @@ section {
 }
 
 .servicesMain2 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, calc(25% - 13px));
-    gap: 20px;
+    gap: 20px; */
 }
 
-.servicesMain2 .leftSide {
+/* .servicesMain2 .leftSide {
     grid-column: span 2;
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     gap: 20px;
     align-items: start;
-}
+} */
 
-.servicesMain2 .bottomArea {
+/* .servicesMain2 .bottomArea {
     grid-column: span 2;
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     gap: 20px;
-}
+} */
 
-.servicesMain2 .middle {
+/* .servicesMain2 .middle {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     height: calc(100% - 20px);
-}
+} */
 
-.servicesMain2 .rightSide {
+/* .servicesMain2 .rightSide {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     height: calc(100% - 20px);
-}
+} */
 
 .servicesMain2 .leftSide .large {
     grid-column: span 2;
@@ -243,6 +243,7 @@ section {
     overflow: hidden;
     background: #fff;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .cardMain {
@@ -320,6 +321,7 @@ section {
     padding: 20px 0;
     color: var(--primary-color);
     text-align: center;
+    font-weight: 700;
 }
 
 footer {
