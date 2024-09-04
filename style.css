@@ -180,9 +180,9 @@ section {
 } */
 
 /* .servicesMain2 { */
-    /* display: grid;
-    grid-template-columns: repeat(4, calc(25% - 13px));
-    gap: 20px; */
+/* display: grid;
+grid-template-columns: repeat(4, calc(25% - 13px));
+gap: 20px; */
 /* } */
 
 /* .servicesMain2 .leftSide {
@@ -266,7 +266,7 @@ section {
 }
 
 .cardInfo {
-    padding: 15px;
+    padding: 15px 0 15px 0;
 }
 
 .serviceCard .cardInfo .infoText {
@@ -321,7 +321,7 @@ section {
 
 .serviceCard .cardInfo .heading {
     font-family: var(--anybody);
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     color: var(--primary-color);
     text-align: center;
     font-weight: 700;
@@ -613,6 +613,7 @@ footer .footerMain .copyRight {
     gap: 20px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    justify-content: start;
 }
 
 .detailsPageMain .film-item,
@@ -621,12 +622,11 @@ footer .footerMain .copyRight {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    flex: 1 1 calc(25% - 40px);
+    flex: 0 1 calc(25% - 40px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 16px;
-    /* Increased gap for better spacing */
     align-items: center;
 }
 

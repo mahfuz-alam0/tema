@@ -79,6 +79,12 @@
     .navigation {
         display: none;
     }
+
+
+    .detailsPageMain .film-item,
+    .serviceDetailsMain .film-item {
+        flex: 0 1 calc(33.33% - 40px);
+    }
 }
 
 @media screen and (max-width: 768px) {
